@@ -1,0 +1,33 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #FFA500;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #FF8C00;
+  font-weight: bold;
+  transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+}
+
+button:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: scale(0.95);
+}
+
+button:hover {
+  background-color: #FF8C00;
+}
+
+.massive-button {
+  padding: 20px 40px;
+  font-size: larger;
+}
