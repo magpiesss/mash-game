@@ -12,25 +12,6 @@ import GameResults from '@/components/GameResults.vue'
 const step = ref<Steps>(Steps.BEGIN);
 const game = ref<Game>({ stepSize: 0, options: [], fortune: '' });
 
-// testing
-// const step = ref<Steps>(Steps.CALCULATE_FORTUNE);
-//
-// const options: GameOption[] = [
-//   ...ALL_OPTIONS,
-//   { name: 'your mum', category: OptionCategory.LIFE_PARTNER },
-//   { name: 'your mum', category: OptionCategory.NUMBER_OF_CHILDREN },
-//   { name: 'your mum', category: OptionCategory.JOB },
-//   { name: 'your mum', category: OptionCategory.SALARY },
-//   { name: 'your mum', category: OptionCategory.CAR },
-//   { name: 'your mum', category: OptionCategory.GEOGRAPHY },
-// ].sort((x, y) => x.category < y.category ? -1 : 1)
-//
-// const game = ref<Game>({
-//   stepSize: 7,
-//   options: options,
-//   fortune: ''
-// })
-// end testing
 
 function setCustomOptions(customOptions: GameOption[]) {
   game.value.options = [
