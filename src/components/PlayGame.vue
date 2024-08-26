@@ -73,9 +73,9 @@ function calculateFortune() {
   const car = selectionOptions.value.find(x => x.category === OptionCategory.CAR && x.selected)?.name ?? '';
   const geography = selectionOptions.value.find(x => x.category === OptionCategory.GEOGRAPHY && x.selected)?.name ?? '';
 
-  const fortune = `You will live in ${home[0] === 'a' ? 'an' : 'a'} ${home} and be happily married to ${lifePartner} with ${children} children.\n` +
-    `You will work as ${job[0] === 'a' ? 'an' : 'a'} ${job} and earn ${salary} per year.\n` +
-    `You will drive ${car[0] === 'a' ? 'an' : 'a'} ${car} and live in ${geography}.`
+  const fortune = `You will live in ${home[0].toLowerCase() === 'a' ? 'an' : 'a'} ${home} and be happily married to ${lifePartner} with ${children} children.\n` +
+    `You will work as ${job[0].toLowerCase() === 'a' ? 'an' : 'a'} ${job} and earn ${salary} per year.\n` +
+    `You will drive ${car[0].toLowerCase() === 'a' ? 'an' : 'a'} ${car} and live in ${geography}.`
 
   emit('setFortune', fortune);
 }
